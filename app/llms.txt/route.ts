@@ -17,7 +17,7 @@ export async function GET() {
   }
 
   const menuCompletoLinea = restaurante.menu_completo_url
-    ? `- [Ver menú con precios](${restaurante.menu_completo_url}): plataforma de pedidos en línea con precios actualizados.`
+    ? `\n- [Ver menú con precios](${restaurante.menu_completo_url}): plataforma de pedidos en línea con precios actualizados.`
     : ''
 
   const zonasLineas = colonias.colonias
@@ -49,7 +49,6 @@ ${platillosLineas}
 ## Menú
 
 - [Ver menú](${BASE}/menu): catálogo completo de platillos.
-${menuCompletoLinea}
 
 ## Páginas del sitio
 
