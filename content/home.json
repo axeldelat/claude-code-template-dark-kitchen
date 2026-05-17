@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "Dark Kitchen Burger · Hamburguesas artesanales en Cancún",
+    "description": "Las mejores hamburguesas artesanales de Cancún. Ingredientes frescos, sabores intensos, entrega a domicilio a toda la ciudad. Pide por WhatsApp.",
+    "og_image": "/images/hero-bg.jpg"
+  },
+  "hero": {
+    "imagen": "/images/hero-bg.jpg",
+    "imagen_alt": "Hamburguesa artesanal Dark Kitchen Burger en Cancún",
+    "h1": "Burgers que no piden disculpas.",
+    "subtitulo": "Ingredientes frescos, fuego real, sabores que se quedan. Entrega a domicilio en Cancún.",
+    "cta_principal_texto": "Pedir por WhatsApp",
+    "cta_secundario_texto": "Ver el menú",
+    "cta_secundario_url": "/menu"
+  },
+  "prueba_social": {
+    "titulo": "Ya nos conocen en Cancún",
+    "items": ["Puerto Cancún", "Zona Hotelera", "Supermanzana 22", "Centro", "Jardines del Sur"]
+  },
+  "impacto": {
+    "texto": "La mayoría de los restaurantes de Cancún te dan lo mismo. Nosotros no."
+  },
+  "platillos_estrella": {
+    "titulo": "Lo que no puedes dejar de probar",
+    "subtitulo": "Ocho razones para no cocinar hoy.",
+    "ver_menu_texto": "Ver menú completo"
+  },
+  "nosotros_preview": {
+    "titulo": "No somos una franquicia. Somos Dark Kitchen.",
+    "texto": "Nacimos en Cancún con una sola obsesión: la hamburguesa perfecta. Sin atajos, sin congelados, sin disculpas.",
+    "cta_texto": "Conoce nuestra historia",
+    "cta_url": "/nosotros",
+    "imagen": "/images/galeria-01.jpg",
+    "imagen_alt": "Cocina de Dark Kitchen Burger en Cancún"
+  },
+  "cta_final": {
+    "titulo": "¿Tienes hambre?",
+    "subtitulo": "Un mensaje y lo tienes en la puerta.",
+    "cta_texto": "Pedir ahora por WhatsApp"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Galería · Dark Kitchen Burger Cancún",
+    "description": "Conoce el ambiente, la cocina y los platillos de Dark Kitchen Burger en Cancún.",
+    "og_image": "/images/galeria-07.jpg"
+  },
+  "hero": {
+    "titulo": "Así se ve Dark Kitchen.",
+    "subtitulo": "Sin filtros. Sin poses. Solo fuego."
+  },
+  "fotos": [
+    { "src": "/images/galeria-01.jpg", "alt": "Interior de Dark Kitchen Burger Cancún — ambiente oscuro y moderno" },
+    { "src": "/images/galeria-02.jpg", "alt": "Cocina de Dark Kitchen Burger — preparación de smash burgers" },
+    { "src": "/images/galeria-03.jpg", "alt": "Hamburguesa artesanal saliendo de la plancha en Dark Kitchen Burger" },
+    { "src": "/images/galeria-04.jpg", "alt": "Barra de Dark Kitchen Burger Cancún con iluminación ambiental" },
+    { "src": "/images/galeria-05.jpg", "alt": "Detalle de ingredientes frescos de Dark Kitchen Burger" },
+    { "src": "/images/galeria-06.jpg", "alt": "Clientes disfrutando en Dark Kitchen Burger Cancún" },
+    { "src": "/images/galeria-07.jpg", "alt": "Dark Fries con queso fundido de Dark Kitchen Burger" },
+    { "src": "/images/galeria-08.jpg", "alt": "Exterior del local de Dark Kitchen Burger en Cancún" }
+  ],
+  "cta_final": {
+    "titulo": "Ahora que ya lo viste.",
+    "subtitulo": "¿A qué estás esperando?",
+    "cta_texto": "Pedir por WhatsApp"
+  }
+}

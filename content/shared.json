@@ -1,0 +1,47 @@
+{
+  "restaurante": {
+    "nombre": "Dark Kitchen Burger",
+    "slogan": "Burgers que no piden disculpas.",
+    "ciudad": "Cancún",
+    "estado": "Quintana Roo",
+    "pais": "México",
+    "tipo_cocina": "Hamburguesas artesanales",
+    "descripcion_corta": "Las mejores hamburguesas artesanales de Cancún. Ingredientes frescos, sabores intensos, entrega a domicilio.",
+    "telefono": "+52 998 123 4567",
+    "whatsapp": "529981234567",
+    "whatsapp_mensaje": "Hola, quiero hacer un pedido en Dark Kitchen Burger",
+    "email": "hola@darkburgercancun.mx",
+    "direccion": {
+      "calle": "Av. Tulum 45, Local 3",
+      "colonia": "Centro",
+      "ciudad": "Cancún",
+      "estado": "Quintana Roo",
+      "cp": "77500",
+      "pais": "México"
+    },
+    "coordenadas": {
+      "lat": 21.1619,
+      "lng": -86.8515
+    },
+    "google_maps_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.0!2d-86.8515!3d21.1619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDA5JzQyLjgiTiA4NsKwNTEnMDUuNCJX!5e0!3m2!1ses!2smx!4v1600000000000",
+    "horarios": [
+      { "dias": "Lunes a Jueves", "horas": "12:00 – 23:00" },
+      { "dias": "Viernes y Sábado", "horas": "12:00 – 01:00" },
+      { "dias": "Domingo", "horas": "13:00 – 22:00" }
+    ],
+    "redes_sociales": {
+      "instagram": "https://instagram.com/darkburgercancun",
+      "facebook": "https://facebook.com/darkburgercancun",
+      "tiktok": "https://tiktok.com/@darkburgercancun"
+    },
+    "menu_completo_url": "https://app.olachef.com/dark-burger-cancun",
+    "google_maps_url": "https://maps.app.goo.gl/ejemplo"
+  },
+  "brand": {
+    "color_acento": "#E63946",
+    "color_acento_hover": "#C1121F"
+  },
+  "seo": {
+    "canonical_base": "https://darkburgercancun.mx"
+  }
+}

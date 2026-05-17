@@ -1,0 +1,68 @@
+{
+  "colonias": [
+    {
+      "slug": "supermanzana-22",
+      "nombre": "Supermanzana 22",
+      "h1": "Hamburguesas a domicilio en Supermanzana 22, Cancún",
+      "descripcion": "Dark Kitchen Burger entrega hamburguesas artesanales a domicilio en Supermanzana 22. Pide por WhatsApp y recíbelas en 35-50 minutos.",
+      "costo_envio": "$45 MXN",
+      "tiempo_entrega": "35-45 min"
+    },
+    {
+      "slug": "zona-hotelera",
+      "nombre": "Zona Hotelera",
+      "h1": "Hamburguesas a domicilio en Zona Hotelera, Cancún",
+      "descripcion": "Dark Kitchen Burger lleva hamburguesas artesanales a la Zona Hotelera de Cancún. Ingredientes frescos, entrega rápida.",
+      "costo_envio": "$75 MXN",
+      "tiempo_entrega": "45-60 min"
+    },
+    {
+      "slug": "puerto-cancun",
+      "nombre": "Puerto Cancún",
+      "h1": "Hamburguesas a domicilio en Puerto Cancún",
+      "descripcion": "Entregamos nuestras hamburguesas artesanales en Puerto Cancún. Smash burgers, papas artesanales y más.",
+      "costo_envio": "$55 MXN",
+      "tiempo_entrega": "35-50 min"
+    },
+    {
+      "slug": "jardines-del-sur",
+      "nombre": "Jardines del Sur",
+      "h1": "Hamburguesas a domicilio en Jardines del Sur, Cancún",
+      "descripcion": "Dark Kitchen Burger entrega en Jardines del Sur, Cancún. Las mejores smash burgers artesanales de la ciudad.",
+      "costo_envio": "$45 MXN",
+      "tiempo_entrega": "30-40 min"
+    },
+    {
+      "slug": "region-94",
+      "nombre": "Región 94",
+      "h1": "Hamburguesas a domicilio en Región 94, Cancún",
+      "descripcion": "Pide tus hamburguesas artesanales en Región 94. Dark Kitchen Burger las lleva a tu puerta en menos de una hora.",
+      "costo_envio": "$55 MXN",
+      "tiempo_entrega": "40-55 min"
+    },
+    {
+      "slug": "cancun-centro",
+      "nombre": "Centro",
+      "h1": "Hamburguesas a domicilio en el Centro de Cancún",
+      "descripcion": "Estamos en el Centro de Cancún y también entregamos aquí. Dark Kitchen Burger: smash burgers artesanales a tu domicilio.",
+      "costo_envio": "$35 MXN",
+      "tiempo_entrega": "20-30 min"
+    },
+    {
+      "slug": "plaza-las-americas",
+      "nombre": "Plaza Las Américas",
+      "h1": "Hamburguesas a domicilio en Plaza Las Américas, Cancún",
+      "descripcion": "Dark Kitchen Burger entrega hamburguesas artesanales en la zona de Plaza Las Américas, Cancún.",
+      "costo_envio": "$45 MXN",
+      "tiempo_entrega": "35-45 min"
+    },
+    {
+      "slug": "fraccionamiento-las-palmas",
+      "nombre": "Las Palmas",
+      "h1": "Hamburguesas a domicilio en Las Palmas, Cancún",
+      "descripcion": "Llevamos nuestras smash burgers artesanales a Fraccionamiento Las Palmas en Cancún.",
+      "costo_envio": "$55 MXN",
+      "tiempo_entrega": "40-55 min"
+    }
+  ]
+}

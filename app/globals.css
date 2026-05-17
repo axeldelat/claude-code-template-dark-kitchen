@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Colores de la paleta dark */
+  --color-bg: #0A0A0A;
+  --color-surface: #141414;
+  --color-surface-2: #1E1E1E;
+  --color-border: #2A2A2A;
+  --color-text: #F5F5F5;
+  --color-text-muted: #9A9A9A;
+  --color-gold: #FFD700;
+
+  /* Color de acento — se sobreescribe por cliente vía layout.tsx */
+  --brand-accent: #E63946;
+  --brand-accent-hover: #C1121F;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Scrollbar oscura */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}

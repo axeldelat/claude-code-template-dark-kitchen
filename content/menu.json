@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "Menú · Dark Kitchen Burger Cancún",
+    "description": "Conoce nuestras hamburguesas artesanales en Cancún. Ingredientes frescos, recetas propias. Pide por WhatsApp o ve nuestro menú completo.",
+    "og_image": "/images/platillo-01.jpg"
+  },
+  "hero": {
+    "titulo": "El menú.",
+    "subtitulo": "Lo mejor que hacemos. Sin adornos."
+  },
+  "platillos": [
+    {
+      "id": "01",
+      "nombre": "The Dark Classic",
+      "descripcion": "Carne de res 180g, queso americano doble, cebolla caramelizada, salsa dark secreta, brioche tostado.",
+      "imagen": "/images/platillo-01.jpg",
+      "imagen_alt": "The Dark Classic — hamburguesa clásica de Dark Kitchen Burger"
+    },
+    {
+      "id": "02",
+      "nombre": "Smash BBQ",
+      "descripcion": "Doble smash patty, tocino ahumado, queso cheddar, cebolla crujiente, salsa BBQ artesanal.",
+      "imagen": "/images/platillo-02.jpg",
+      "imagen_alt": "Smash BBQ — hamburguesa smash con tocino de Dark Kitchen Burger"
+    },
+    {
+      "id": "03",
+      "nombre": "La Picosa",
+      "descripcion": "Carne de res, jalapeños frescos, queso pepper jack, guacamole, sriracha mayo.",
+      "imagen": "/images/platillo-03.jpg",
+      "imagen_alt": "La Picosa — hamburguesa picante de Dark Kitchen Burger"
+    },
+    {
+      "id": "04",
+      "nombre": "Chicken Crunch",
+      "descripcion": "Pechuga de pollo empanizada, coleslaw casero, pepinillos, salsa honey mustard.",
+      "imagen": "/images/platillo-04.jpg",
+      "imagen_alt": "Chicken Crunch — hamburguesa de pollo crujiente Dark Kitchen Burger"
+    },
+    {
+      "id": "05",
+      "nombre": "The Funghi",
+      "descripcion": "Carne de res, champiñones salteados, queso suizo, cebolla morada, mayo trufada.",
+      "imagen": "/images/platillo-05.jpg",
+      "imagen_alt": "The Funghi — hamburguesa con champiñones de Dark Kitchen Burger"
+    },
+    {
+      "id": "06",
+      "nombre": "Smash Doble",
+      "descripcion": "Dos smash patties, queso americano x2, pepinillos, mostaza, ketchup. El clásico amplificado.",
+      "imagen": "/images/platillo-06.jpg",
+      "imagen_alt": "Smash Doble — doble smash burger de Dark Kitchen Burger"
+    },
+    {
+      "id": "07",
+      "nombre": "Dark Fries",
+      "descripcion": "Papas fritas gruesas con piel, sal de mar, alioli dark y queso fundido.",
+      "imagen": "/images/platillo-07.jpg",
+      "imagen_alt": "Dark Fries — papas fritas de Dark Kitchen Burger"
+    },
+    {
+      "id": "08",
+      "nombre": "Combo Dark",
+      "descripcion": "Cualquier burger + Dark Fries + refresco de lata. La combinación perfecta.",
+      "imagen": "/images/platillo-08.jpg",
+      "imagen_alt": "Combo Dark — combo completo de Dark Kitchen Burger Cancún"
+    }
+  ],
+  "menu_completo": {
+    "mostrar": true,
+    "texto": "¿Quieres ver el menú completo con precios?",
+    "cta_texto": "Ver menú completo"
+  },
+  "cta_final": {
+    "titulo": "¿Ya elegiste?",
+    "subtitulo": "Mándanos tu pedido por WhatsApp.",
+    "cta_texto": "Pedir por WhatsApp"
+  }
+}

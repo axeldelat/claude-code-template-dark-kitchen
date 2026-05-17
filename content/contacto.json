@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Contacto y Ubicación · Dark Kitchen Burger Cancún",
+    "description": "Encuentra Dark Kitchen Burger en Cancún. Dirección, horarios y zonas de entrega. Pide por WhatsApp.",
+    "og_image": "/images/hero-bg.jpg"
+  },
+  "hero": {
+    "titulo": "Encuéntranos.",
+    "subtitulo": "O dinos dónde estás y llegamos."
+  },
+  "faq": [
+    {
+      "pregunta": "¿Hacen entregas a domicilio en Cancún?",
+      "respuesta": "Sí, entregamos en toda la zona urbana de Cancún. Escríbenos por WhatsApp para confirmar tu colonia y tiempo de entrega estimado."
+    },
+    {
+      "pregunta": "¿Cuánto tarda el pedido?",
+      "respuesta": "En promedio 35 a 50 minutos dependiendo de tu zona. Te avisamos por WhatsApp en cuanto salga tu pedido."
+    },
+    {
+      "pregunta": "¿Puedo recoger en el local?",
+      "respuesta": "Sí, puedes recoger en Av. Tulum 45, Local 3, Centro, Cancún. Dinos que vas a recoger al hacer tu pedido y te tenemos listo."
+    },
+    {
+      "pregunta": "¿Qué métodos de pago aceptan?",
+      "respuesta": "Efectivo y transferencia SPEI al momento de la entrega. Para pedidos en el local también tarjeta."
+    },
+    {
+      "pregunta": "¿Tienen menú para grupos o eventos?",
+      "respuesta": "Sí, armamos paquetes para grupos desde 10 personas. Escríbenos con anticipación."
+    }
+  ],
+  "cta_final": {
+    "titulo": "¿Lista la dirección?",
+    "subtitulo": "Mándanos tu pedido.",
+    "cta_texto": "Pedir por WhatsApp"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "title": "Nosotros · Dark Kitchen Burger Cancún",
+    "description": "Conoce la historia de Dark Kitchen Burger. Hamburguesas artesanales nacidas en Cancún. Sin franquicias, sin atajos.",
+    "og_image": "/images/nosotros-historia.jpg"
+  },
+  "hero": {
+    "titulo": "No somos una franquicia.",
+    "subtitulo": "Somos Dark Kitchen."
+  },
+  "historia": {
+    "imagen": "/images/nosotros-historia.jpg",
+    "imagen_alt": "Equipo de Dark Kitchen Burger en la cocina, Cancún",
+    "parrafo_1": "Dark Kitchen Burger nació en 2022 en Cancún con una sola obsesión: hacer la hamburguesa perfecta. No la más barata. No la más rápida. La que vale cada peso.",
+    "parrafo_2": "Empezamos en una cocina pequeña con dos recetas y un número de WhatsApp. Hoy servimos cientos de pedidos a la semana en toda la ciudad, sin perder lo que nos hizo crecer: ingredientes frescos, carne de calidad y recetas que son nuestras.",
+    "parrafo_3": "No tenemos franquiciados. No compramos carne congelada. No hacemos descuentos que no podemos pagar. Hacemos hamburguesas honestas para gente que sabe lo que come."
+  },
+  "valores": [
+    { "icono": "🥩", "titulo": "Carne fresca, siempre", "descripcion": "Proveedor local, entrega diaria. Nunca congelada." },
+    { "icono": "🍞", "titulo": "Pan artesanal", "descripcion": "Brioche hecho en Cancún. Sin conservadores." },
+    { "icono": "🔥", "titulo": "Smash technique", "descripcion": "Costra perfecta en plancha de hierro. Sin término medio." },
+    { "icono": "📍", "titulo": "100% Cancún", "descripcion": "Nacimos aquí. Crecemos aquí. Punto." }
+  ],
+  "equipo": {
+    "mostrar": true,
+    "titulo": "El equipo",
+    "descripcion": "Somos 8 personas que se obsesionan con que cada hamburguesa salga perfecta.",
+    "imagen": "/images/nosotros-equipo.jpg",
+    "imagen_alt": "Equipo completo de Dark Kitchen Burger frente al local en Cancún"
+  },
+  "cta_final": {
+    "titulo": "¿Te convencimos?",
+    "subtitulo": "Pruébanos hoy.",
+    "cta_texto": "Pedir por WhatsApp"
+  }
+}
