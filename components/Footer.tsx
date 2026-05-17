@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import shared from '@/content/shared.json'
 import colonias from '@/content/colonias.json'
+import { CurrentYear } from '@/components/CurrentYear'
+import { FooterLogo } from '@/components/FooterLogo'
 
 const navLinks = [
   { label: 'Menú', href: '/menu' },
@@ -38,7 +40,6 @@ function IconTikTok() {
 export function Footer() {
   const { nombre, slogan, email, telefono, whatsapp, whatsapp_mensaje, redes_sociales, horarios } = shared.restaurante
   const waUrl = `https://wa.me/${whatsapp}?text=${encodeURIComponent(whatsapp_mensaje)}`
-  const year = new Date().getFullYear()
 
   return (
     <footer className="bg-[#141414] border-t border-[#2A2A2A]">
@@ -47,7 +48,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
 
           <div>
-            <p className="font-sans font-bold text-xl text-[#F5F5F5] mb-2">{nombre}</p>
+            <div className="mb-2">
+              <FooterLogo nombre={nombre} />
+            </div>
             <p className="font-body text-sm text-[#9A9A9A] mb-6">{slogan}</p>
             <div className="flex items-center gap-5 mt-2">
               {redes_sociales.instagram && (
@@ -150,7 +153,7 @@ export function Footer() {
 
         <div className="border-t border-[#2A2A2A] pt-6 flex flex-col sm:flex-row justify-between items-center gap-2">
           <p className="font-body text-xs text-[#9A9A9A]">
-            © {year} {nombre} · Todos los derechos reservados
+            © <CurrentYear /> {nombre} · Todos los derechos reservados
           </p>
           <p className="font-body text-xs text-[#9A9A9A]">
             Sitio web por{' '}
