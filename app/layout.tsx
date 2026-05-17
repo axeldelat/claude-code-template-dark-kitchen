@@ -19,7 +19,11 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(shared.seo.canonical_base),
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : shared.seo.canonical_base
+  ),
   title: {
     default: shared.restaurante.nombre,
     template: `%s · ${shared.restaurante.nombre}`,
