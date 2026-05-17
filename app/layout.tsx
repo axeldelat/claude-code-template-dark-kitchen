@@ -5,6 +5,7 @@ import shared from '@/content/shared.json'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
+import { Analytics } from '@vercel/analytics/react'
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -59,6 +60,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <WhatsAppButton />
+        <Analytics />
       </body>
     </html>
   )

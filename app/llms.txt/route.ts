@@ -1,5 +1,6 @@
 import shared from '@/content/shared.json'
 import colonias from '@/content/colonias.json'
+import menu from '@/content/menu.json'
 
 export async function GET() {
   const { restaurante, seo } = shared
@@ -16,15 +17,19 @@ export async function GET() {
   }
 
   const menuCompletoLinea = restaurante.menu_completo_url
-    ? `- [Ver menú con precios](${restaurante.menu_completo_url}): plataforma de pedidos en línea con precios actualizados.`
+    ? `\n- [Ver menú con precios](${restaurante.menu_completo_url}): plataforma de pedidos en línea con precios actualizados.`
     : ''
 
   const zonasLineas = colonias.colonias
-    .map((c) => `- [${c.nombre}](${BASE}/${c.slug})`)
+    .map((c) => `- [${c.nombre}](${BASE}/${c.slug}): envío ${c.costo_envio}, ${c.tiempo_entrega}`)
     .join('\n')
 
   const horariosLineas = restaurante.horarios
-    .map((h) => `- ${h.dias}: ${h.horas}`)
+    .map((h: { dias: string; horas: string }) => `- ${h.dias}: ${h.horas}`)
+    .join('\n')
+
+  const platillosLineas = menu.platillos
+    .map((p) => `- ${p.nombre}: ${p.descripcion}`)
     .join('\n')
 
   const content = `# ${restaurante.nombre}
@@ -33,16 +38,19 @@ export async function GET() {
 
 ${restaurante.nombre} es un restaurante de ${restaurante.tipo_cocina} ubicado en ${restaurante.ciudad}, ${restaurante.estado}, México.
 
-## Hacer un pedido
+## Cómo hacer un pedido
 
-${ctaLineas.join('\n')}
+${ctaLineas.length > 0 ? ctaLineas.join('\n') : `- Contáctanos directamente al teléfono: ${restaurante.telefono}`}
+
+## Platillos
+
+${platillosLineas}
 
 ## Menú
 
-- [Menú](${BASE}/menu): catálogo de platillos estrella.
-${menuCompletoLinea}
+- [Ver menú](${BASE}/menu): catálogo completo de platillos.
 
-## Páginas principales
+## Páginas del sitio
 
 - [Inicio](${BASE}/): presentación del restaurante y platillos estrella
 - [Menú](${BASE}/menu): catálogo de platillos
@@ -60,13 +68,16 @@ ${horariosLineas}
 
 ## Contacto
 
-- Dirección: ${restaurante.direccion.calle}, ${restaurante.direccion.colonia}, ${restaurante.ciudad}
+- Dirección: ${restaurante.direccion.calle}, ${restaurante.direccion.colonia}, ${restaurante.ciudad}, ${restaurante.estado}
 - Teléfono: ${restaurante.telefono}
-- WhatsApp: https://wa.me/${restaurante.whatsapp}
 - Email: ${restaurante.email}
+${restaurante.whatsapp ? `- WhatsApp: https://wa.me/${restaurante.whatsapp}` : ''}
 `
 
   return new Response(content, {
-    headers: { 'Content-Type': 'text/plain; charset=utf-8' },
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+      'Cache-Control': 'public, max-age=3600',
+    },
   })
 }
