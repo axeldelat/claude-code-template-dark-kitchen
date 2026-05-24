@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import shared from '@/content/shared.json'
 
@@ -15,32 +14,29 @@ const navLinks = [
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
-  const [logoError, setLogoError] = useState(false)
   const pathname = usePathname()
   const { nombre, whatsapp, whatsapp_mensaje } = shared.restaurante
   const waUrl = `https://wa.me/${whatsapp}?text=${encodeURIComponent(whatsapp_mensaje)}`
 
   return (
-    <header className="sticky top-0 z-50 bg-[#141414] border-b border-[#2A2A2A]">
+    <header className="sticky top-0 z-50 bg-surface border-b border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
 
-          {/* Logo */}
+          {/* Logo — SVG inline para que currentColor herede text-text */}
           <Link href="/" className="flex items-center shrink-0 hover:opacity-80 transition-opacity">
-            {!logoError ? (
-              <Image
-                src="/brand/logo.svg"
-                alt={nombre}
-                width={120}
-                height={36}
-                priority
-                onError={() => setLogoError(true)}
-              />
-            ) : (
-              <span className="font-sans font-bold text-xl text-[#F5F5F5] tracking-tight">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="120"
+              height="36"
+              viewBox="0 0 120 36"
+              className="text-text"
+              aria-label={nombre}
+            >
+              <text x="0" y="26" fontFamily="sans-serif" fontWeight="700" fontSize="18" fill="currentColor" letterSpacing="-0.5">
                 {nombre}
-              </span>
-            )}
+              </text>
+            </svg>
           </Link>
 
           {/* Desktop nav */}
@@ -51,8 +47,8 @@ export function Navbar() {
                 href={link.href}
                 className={`font-sans text-sm font-medium transition-colors ${
                   pathname === link.href
-                    ? 'text-[#F5F5F5]'
-                    : 'text-[#9A9A9A] hover:text-[#F5F5F5]'
+                    ? 'text-text'
+                    : 'text-muted hover:text-text'
                 }`}
               >
                 {link.label}
@@ -79,17 +75,17 @@ export function Navbar() {
             aria-expanded={open}
           >
             <span
-              className={`block w-5 h-0.5 bg-[#F5F5F5] transition-transform duration-200 ${
+              className={`block w-5 h-0.5 bg-text transition-transform duration-200 ${
                 open ? 'translate-y-2 rotate-45' : ''
               }`}
             />
             <span
-              className={`block w-5 h-0.5 bg-[#F5F5F5] transition-opacity duration-200 ${
+              className={`block w-5 h-0.5 bg-text transition-opacity duration-200 ${
                 open ? 'opacity-0' : ''
               }`}
             />
             <span
-              className={`block w-5 h-0.5 bg-[#F5F5F5] transition-transform duration-200 ${
+              className={`block w-5 h-0.5 bg-text transition-transform duration-200 ${
                 open ? '-translate-y-2 -rotate-45' : ''
               }`}
             />
@@ -98,7 +94,7 @@ export function Navbar() {
 
         {/* Mobile drawer */}
         {open && (
-          <nav className="md:hidden border-t border-[#2A2A2A] py-6">
+          <nav className="md:hidden border-t border-border py-6">
             <div className="flex flex-col gap-1 mb-5">
               {navLinks.map((link) => (
                 <Link
@@ -107,8 +103,8 @@ export function Navbar() {
                   onClick={() => setOpen(false)}
                   className={`font-sans text-base font-medium py-3 transition-colors ${
                     pathname === link.href
-                      ? 'text-[#F5F5F5]'
-                      : 'text-[#9A9A9A] hover:text-[#F5F5F5]'
+                      ? 'text-text'
+                      : 'text-muted hover:text-text'
                   }`}
                 >
                   {link.label}

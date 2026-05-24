@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  /* Colores de la paleta dark */
-  --color-bg: #0A0A0A;
-  --color-surface: #141414;
-  --color-surface-2: #1E1E1E;
-  --color-border: #2A2A2A;
-  --color-text: #F5F5F5;
-  --color-text-muted: #9A9A9A;
-  --color-gold: #FFD700;
+  /* Colores de la paleta light */
+  --color-bg: #FAFAF8;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F5F5F3;
+  --color-border: #E5E5E0;
+  --color-text: #1A1A1A;
+  --color-text-muted: #6B6B6B;
+  --color-gold: #B8960C;
 
   /* Color de acento — se sobreescribe por cliente vía layout.tsx */
   --brand-accent: #E63946;
@@ -31,7 +31,7 @@ body {
   color: var(--color-text);
 }
 
-/* Scrollbar oscura */
+/* Scrollbar clara */
 ::-webkit-scrollbar {
   width: 6px;
 }

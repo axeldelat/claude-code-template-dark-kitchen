@@ -37,18 +37,18 @@ export default function MenuPage() {
     <>
       <SchemaScript schema={schema} />
 
-      <section className="py-24 lg:py-32 bg-[#0A0A0A] text-center">
+      <section className="py-24 lg:py-32 bg-bg text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-sans font-bold text-5xl lg:text-7xl text-[#F5F5F5] mb-4 tracking-tight">
+          <h1 className="font-sans font-bold text-5xl lg:text-7xl text-text mb-4 tracking-tight">
             {content.hero.titulo}
           </h1>
-          <p className="font-body text-lg text-[#9A9A9A]">
+          <p className="font-body text-lg text-muted">
             {content.hero.subtitulo}
           </p>
         </div>
       </section>
 
-      <section className="py-16 bg-[#141414]">
+      <section className="py-16 bg-surface-2">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {content.platillos.map((p) => (
@@ -65,16 +65,16 @@ export default function MenuPage() {
       </section>
 
       {content.menu_completo.mostrar && menu_completo_url && (
-        <section className="py-16 bg-[#0A0A0A] text-center">
+        <section className="py-16 bg-bg text-center">
           <div className="max-w-xl mx-auto px-4">
-            <p className="font-body text-lg text-[#9A9A9A] mb-6">
+            <p className="font-body text-lg text-muted mb-6">
               {content.menu_completo.texto}
             </p>
             <a
               href={menu_completo_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block font-sans font-bold text-base px-8 py-3 rounded-full border-2 border-[#F5F5F5] text-[#F5F5F5] hover:bg-white hover:text-black transition-colors"
+              className="inline-block font-sans font-bold text-base px-8 py-3 rounded-full border-2 border-text text-text hover:bg-text hover:text-white transition-colors"
             >
               {content.menu_completo.cta_texto} ↗
             </a>

@@ -35,10 +35,28 @@ content/colonias.json     → zonas de entrega (SEO programático)
 
 Importar así: `import content from '@/content/home.json'`
 
-## Regla #2 — Color de acento nunca hardcodeado
+## Regla #2 — Colores siempre via tokens semánticos
 
-Usar siempre `var(--brand-accent)` — nunca `#E63946` directo en componentes.
-El valor viene de `shared.json → brand.color_acento` inyectado en `layout.tsx`.
+Nunca colores hex hardcodeados en componentes. Usar siempre las clases Tailwind semánticas:
+
+| Clase Tailwind | Token CSS | Uso |
+|----------------|-----------|-----|
+| `bg-bg` | `--color-bg` | Fondo principal de página |
+| `bg-surface` | `--color-surface` | Navbar, footer, cards |
+| `bg-surface-2` | `--color-surface-2` | Secciones alternas |
+| `border-border` / `divide-border` | `--color-border` | Bordes y divisores |
+| `text-text` | `--color-text` | Texto principal |
+| `text-muted` | `--color-text-muted` | Texto secundario |
+| `text-gold` / `bg-gold` | `--color-gold` | Acento dorado |
+
+Para cambiar el tema completo: editar solo `globals.css` (valores de `:root`).
+
+El color de acento de marca sigue siendo excepción — viene de `shared.json → brand.color_acento`
+inyectado en `layout.tsx` y se usa via `style={{ color: 'var(--brand-accent)' }}` o `text-accent`.
+
+Excepciones válidas de color hardcodeado:
+- `text-white` / `bg-white` sobre fondos de color (botones accent, overlay de hero)
+- `bg-black/{opacity}` para overlays sobre imágenes
 
 ## Regla #3 — next/image siempre
 
@@ -93,16 +111,20 @@ content/                  → todos los JSONs del restaurante
 public/images/            → fotos del restaurante
 ```
 
-## Paleta
+## Paleta (tema light)
 
 ```css
---color-bg:        #0A0A0A   /* fondo principal */
---color-surface:   #141414   /* cards, navbar, footer */
---color-border:    #2A2A2A   /* separadores — no usar <hr> */
---color-text:      #F5F5F5   /* texto principal */
---color-text-muted:#9A9A9A   /* texto secundario */
+--color-bg:        #FAFAF8   /* fondo principal */
+--color-surface:   #FFFFFF   /* navbar, footer, cards */
+--color-surface-2: #F5F5F3   /* secciones alternas */
+--color-border:    #E5E5E0   /* separadores — no usar <hr> */
+--color-text:      #1A1A1A   /* texto principal */
+--color-text-muted:#6B6B6B   /* texto secundario */
+--color-gold:      #B8960C   /* dorado (con contraste en light) */
 --brand-accent:    var desde shared.json  /* rojo #E63946 para Dark Kitchen */
 ```
+
+Para cambiar a otro tema: reemplazar los valores de `:root` en `globals.css`. Los componentes no cambian.
 
 ## Tipografía
 

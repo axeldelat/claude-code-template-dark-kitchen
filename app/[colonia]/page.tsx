@@ -82,12 +82,12 @@ export default function ColoniaPage({ params }: { params: { colonia: string } })
     <>
       <SchemaScript schema={schema} />
 
-      <section className="py-24 lg:py-32 bg-[#0A0A0A]">
+      <section className="py-24 lg:py-32 bg-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-sans font-bold text-4xl lg:text-6xl text-[#F5F5F5] mb-6 tracking-tight leading-tight">
+          <h1 className="font-sans font-bold text-4xl lg:text-6xl text-text mb-6 tracking-tight leading-tight">
             {colonia.h1}
           </h1>
-          <p className="font-body text-lg text-[#9A9A9A] mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="font-body text-lg text-muted mb-10 max-w-2xl mx-auto leading-relaxed">
             {colonia.descripcion}
           </p>
           <a
@@ -102,23 +102,23 @@ export default function ColoniaPage({ params }: { params: { colonia: string } })
         </div>
       </section>
 
-      <section className="py-8 bg-[#141414] border-y border-[#2A2A2A]">
+      <section className="py-8 bg-surface border-y border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-center gap-8 text-center">
             <div>
-              <p className="font-sans text-xs uppercase tracking-widest text-[#9A9A9A] mb-1">
+              <p className="font-sans text-xs uppercase tracking-widest text-muted mb-1">
                 Costo de envío
               </p>
-              <p className="font-sans font-bold text-2xl text-[#F5F5F5]">
+              <p className="font-sans font-bold text-2xl text-text">
                 {colonia.costo_envio}
               </p>
             </div>
-            <div className="hidden sm:block w-px bg-[#2A2A2A]" />
+            <div className="hidden sm:block w-px bg-border" />
             <div>
-              <p className="font-sans text-xs uppercase tracking-widest text-[#9A9A9A] mb-1">
+              <p className="font-sans text-xs uppercase tracking-widest text-muted mb-1">
                 Tiempo estimado
               </p>
-              <p className="font-sans font-bold text-2xl text-[#F5F5F5]">
+              <p className="font-sans font-bold text-2xl text-text">
                 {colonia.tiempo_entrega}
               </p>
             </div>
@@ -126,9 +126,9 @@ export default function ColoniaPage({ params }: { params: { colonia: string } })
         </div>
       </section>
 
-      <section className="py-20 bg-[#141414]">
+      <section className="py-20 bg-surface-2">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-sans font-bold text-3xl text-[#F5F5F5] mb-10 text-center">
+          <h2 className="font-sans font-bold text-3xl text-text mb-10 text-center">
             Lo que llevamos a {colonia.nombre}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -145,9 +145,9 @@ export default function ColoniaPage({ params }: { params: { colonia: string } })
         </div>
       </section>
 
-      <section className="py-20 bg-[#0A0A0A]">
+      <section className="py-20 bg-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-sans font-bold text-3xl text-[#F5F5F5] mb-12 text-center">
+          <h2 className="font-sans font-bold text-3xl text-text mb-12 text-center">
             Cómo pedir a domicilio en {colonia.nombre}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
@@ -163,10 +163,10 @@ export default function ColoniaPage({ params }: { params: { colonia: string } })
                 >
                   {paso.num}
                 </p>
-                <h3 className="font-sans font-semibold text-lg text-[#F5F5F5] mb-2">
+                <h3 className="font-sans font-semibold text-lg text-text mb-2">
                   {paso.titulo}
                 </h3>
-                <p className="font-body text-sm text-[#9A9A9A] leading-relaxed">
+                <p className="font-body text-sm text-muted leading-relaxed">
                   {paso.desc}
                 </p>
               </div>

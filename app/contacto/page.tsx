@@ -59,40 +59,40 @@ export default function ContactoPage() {
     <>
       <SchemaScript schema={schema} />
 
-      <section className="py-24 lg:py-32 bg-[#0A0A0A] text-center">
+      <section className="py-24 lg:py-32 bg-bg text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-sans font-bold text-5xl lg:text-6xl text-[#F5F5F5] mb-4 tracking-tight">
+          <h1 className="font-sans font-bold text-5xl lg:text-6xl text-text mb-4 tracking-tight">
             {content.hero.titulo}
           </h1>
-          <p className="font-body text-xl text-[#9A9A9A]">
+          <p className="font-body text-xl text-muted">
             {content.hero.subtitulo}
           </p>
         </div>
       </section>
 
-      <section className="py-16 bg-[#141414]">
+      <section className="py-16 bg-surface">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <div className="mb-8">
-                <p className="font-sans text-xs uppercase tracking-widest text-[#9A9A9A] mb-3">
+                <p className="font-sans text-xs uppercase tracking-widest text-muted mb-3">
                   Dirección
                 </p>
-                <p className="font-body text-base text-[#F5F5F5]">
+                <p className="font-body text-base text-text">
                   {direccion.calle}
                 </p>
-                <p className="font-body text-base text-[#9A9A9A]">
+                <p className="font-body text-base text-muted">
                   {direccion.colonia}, {direccion.ciudad}, {direccion.estado}
                 </p>
               </div>
 
               <div className="mb-8 flex flex-col gap-2">
                 <a href={`tel:${telefono}`}
-                  className="font-body text-base text-[#9A9A9A] hover:text-[#F5F5F5] transition-colors">
+                  className="font-body text-base text-muted hover:text-text transition-colors">
                   {telefono}
                 </a>
                 <a href={`mailto:${email}`}
-                  className="font-body text-base text-[#9A9A9A] hover:text-[#F5F5F5] transition-colors">
+                  className="font-body text-base text-muted hover:text-text transition-colors">
                   {email}
                 </a>
                 <a href={waUrl} target="_blank" rel="noopener noreferrer"
@@ -103,21 +103,21 @@ export default function ContactoPage() {
               </div>
 
               <div>
-                <p className="font-sans text-xs uppercase tracking-widest text-[#9A9A9A] mb-3">
+                <p className="font-sans text-xs uppercase tracking-widest text-muted mb-3">
                   Horarios
                 </p>
                 <div className="flex flex-col gap-1">
                   {horarios.map((h, i) => (
                     <div key={i} className="flex justify-between font-body text-sm">
-                      <span className="text-[#9A9A9A]">{h.dias}</span>
-                      <span className="text-[#F5F5F5]">{h.horas}</span>
+                      <span className="text-muted">{h.dias}</span>
+                      <span className="text-text">{h.horas}</span>
                     </div>
                   ))}
                 </div>
               </div>
             </div>
 
-            <div className="rounded-lg overflow-hidden border border-[#2A2A2A] h-80 lg:h-auto">
+            <div className="rounded-lg overflow-hidden border border-border h-80 lg:h-auto">
               <iframe
                 src={google_maps_embed}
                 width="100%"
@@ -133,9 +133,9 @@ export default function ContactoPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#0A0A0A]">
+      <section className="py-20 bg-bg">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-sans font-bold text-3xl text-[#F5F5F5] mb-10 text-center">
+          <h2 className="font-sans font-bold text-3xl text-text mb-10 text-center">
             Preguntas frecuentes
           </h2>
           <FAQAccordion items={content.faq} />

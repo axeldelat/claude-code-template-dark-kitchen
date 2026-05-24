@@ -42,7 +42,7 @@ export function Footer() {
   const waUrl = `https://wa.me/${whatsapp}?text=${encodeURIComponent(whatsapp_mensaje)}`
 
   return (
-    <footer className="bg-[#141414] border-t border-[#2A2A2A]">
+    <footer className="bg-surface-2 border-t border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
@@ -51,7 +51,7 @@ export function Footer() {
             <div className="mb-2">
               <FooterLogo nombre={nombre} />
             </div>
-            <p className="font-body text-sm text-[#9A9A9A] mb-6">{slogan}</p>
+            <p className="font-body text-sm text-muted mb-6">{slogan}</p>
             <div className="flex items-center gap-5 mt-2">
               {redes_sociales.instagram && (
                 <a
@@ -59,7 +59,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="text-[#9A9A9A] hover:text-[#F5F5F5] transition-colors"
+                  className="text-muted hover:text-text transition-colors"
                 >
                   <IconInstagram />
                 </a>
@@ -70,7 +70,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
-                  className="text-[#9A9A9A] hover:text-[#F5F5F5] transition-colors"
+                  className="text-muted hover:text-text transition-colors"
                 >
                   <IconFacebook />
                 </a>
@@ -81,7 +81,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="TikTok"
-                  className="text-[#9A9A9A] hover:text-[#F5F5F5] transition-colors"
+                  className="text-muted hover:text-text transition-colors"
                 >
                   <IconTikTok />
                 </a>
@@ -90,25 +90,25 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="font-sans font-semibold text-sm uppercase tracking-wide text-[#9A9A9A] mb-4">
+            <p className="font-sans font-semibold text-sm uppercase tracking-wide text-muted mb-4">
               Secciones
             </p>
             <ul className="flex flex-col gap-2 mb-8">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href}
-                    className="font-body text-sm text-[#9A9A9A] hover:text-[#F5F5F5] transition-colors">
+                    className="font-body text-sm text-muted hover:text-text transition-colors">
                     {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
-            <p className="font-sans font-semibold text-sm uppercase tracking-wide text-[#9A9A9A] mb-3">
+            <p className="font-sans font-semibold text-sm uppercase tracking-wide text-muted mb-3">
               Horarios
             </p>
             <ul className="flex flex-col gap-1">
               {horarios.map((h, i) => (
-                <li key={i} className="font-body text-sm text-[#9A9A9A]">
+                <li key={i} className="font-body text-sm text-muted">
                   {h.dias}: {h.horas}
                 </li>
               ))}
@@ -116,16 +116,16 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="font-sans font-semibold text-sm uppercase tracking-wide text-[#9A9A9A] mb-4">
+            <p className="font-sans font-semibold text-sm uppercase tracking-wide text-muted mb-4">
               Contacto
             </p>
             <div className="flex flex-col gap-2">
               <a href={`tel:${telefono}`}
-                className="font-body text-sm text-[#9A9A9A] hover:text-[#F5F5F5] transition-colors">
+                className="font-body text-sm text-muted hover:text-text transition-colors">
                 {telefono}
               </a>
               <a href={`mailto:${email}`}
-                className="font-body text-sm text-[#9A9A9A] hover:text-[#F5F5F5] transition-colors">
+                className="font-body text-sm text-muted hover:text-text transition-colors">
                 {email}
               </a>
               <a href={waUrl} target="_blank" rel="noopener noreferrer"
@@ -137,28 +137,28 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#2A2A2A] pt-8 mb-8">
-          <p className="font-sans text-xs uppercase tracking-wide text-[#9A9A9A] mb-3">
+        <div className="border-t border-border pt-8 mb-8">
+          <p className="font-sans text-xs uppercase tracking-wide text-muted mb-3">
             Entregamos en:
           </p>
           <div className="flex flex-wrap gap-x-3 gap-y-1">
             {colonias.colonias.map((c) => (
               <Link key={c.slug} href={`/${c.slug}`}
-                className="font-body text-xs text-[#9A9A9A] hover:text-[#F5F5F5] transition-colors">
+                className="font-body text-xs text-muted hover:text-text transition-colors">
                 {c.nombre}
               </Link>
             ))}
           </div>
         </div>
 
-        <div className="border-t border-[#2A2A2A] pt-6 flex flex-col sm:flex-row justify-between items-center gap-2">
-          <p className="font-body text-xs text-[#9A9A9A]">
+        <div className="border-t border-border pt-6 flex flex-col sm:flex-row justify-between items-center gap-2">
+          <p className="font-body text-xs text-muted">
             © <CurrentYear /> {nombre} · Todos los derechos reservados
           </p>
-          <p className="font-body text-xs text-[#9A9A9A]">
+          <p className="font-body text-xs text-muted">
             Sitio web por{' '}
             <a href="https://markerante.com" target="_blank" rel="noopener noreferrer"
-              className="hover:text-[#F5F5F5] transition-colors">
+              className="hover:text-text transition-colors">
               Markerante
             </a>
           </p>

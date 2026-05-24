@@ -55,7 +55,7 @@ export default function RootLayout({
       <head>
         <style dangerouslySetInnerHTML={{ __html: brandStyles }} />
       </head>
-      <body className="bg-[#0A0A0A] text-[#F5F5F5] font-body antialiased">
+      <body className="bg-bg text-text font-body antialiased">
         <Navbar />
         <main>{children}</main>
         <Footer />

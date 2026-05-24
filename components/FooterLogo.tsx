@@ -1,31 +1,20 @@
-'use client'
-
-import { useState } from 'react'
-import Image from 'next/image'
-
 interface FooterLogoProps {
   nombre: string
 }
 
 export function FooterLogo({ nombre }: FooterLogoProps) {
-  const [logoError, setLogoError] = useState(false)
-
-  if (logoError) {
-    return (
-      <span className="font-sans font-bold text-xl text-[#F5F5F5] tracking-tight">
-        {nombre}
-      </span>
-    )
-  }
-
   return (
-    <Image
-      src="/brand/logo.svg"
-      alt={nombre}
-      width={130}
-      height={40}
-      className="h-10 w-auto"
-      onError={() => setLogoError(true)}
-    />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="130"
+      height="40"
+      viewBox="0 0 130 40"
+      className="text-text"
+      aria-label={nombre}
+    >
+      <text x="0" y="28" fontFamily="sans-serif" fontWeight="700" fontSize="18" fill="currentColor" letterSpacing="-0.5">
+        {nombre}
+      </text>
+    </svg>
   )
 }

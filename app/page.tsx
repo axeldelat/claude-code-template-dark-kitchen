@@ -76,7 +76,7 @@ export default function Home() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="font-sans font-bold text-5xl lg:text-7xl text-white mb-6 leading-tight tracking-tight">
             {home.hero.h1}
@@ -104,14 +104,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#141414] py-8 border-b border-[#2A2A2A]">
+      <section className="bg-surface py-8 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#9A9A9A] mb-4">
+          <p className="font-sans text-xs font-medium uppercase tracking-widest text-muted mb-4">
             {home.prueba_social.titulo}
           </p>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             {home.prueba_social.items.map((item, i) => (
-              <span key={i} className="font-sans font-semibold text-base text-[#F5F5F5]">
+              <span key={i} className="font-sans font-semibold text-base text-text">
                 {item}
               </span>
             ))}
@@ -119,21 +119,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-[#0A0A0A]">
+      <section className="py-20 lg:py-28 bg-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="font-sans font-bold text-3xl lg:text-5xl text-[#F5F5F5] leading-tight">
+          <p className="font-sans font-bold text-3xl lg:text-5xl text-text leading-tight">
             {home.impacto.texto}
           </p>
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-[#141414]">
+      <section className="py-20 lg:py-28 bg-surface-2">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="font-sans font-bold text-3xl lg:text-4xl text-[#F5F5F5] mb-3">
+            <h2 className="font-sans font-bold text-3xl lg:text-4xl text-text mb-3">
               {home.platillos_estrella.titulo}
             </h2>
-            <p className="font-body text-lg text-[#9A9A9A]">
+            <p className="font-body text-lg text-muted">
               {home.platillos_estrella.subtitulo}
             </p>
           </div>
@@ -151,7 +151,7 @@ export default function Home() {
           <div className="text-center">
             <Link
               href="/menu"
-              className="font-sans font-semibold text-base px-8 py-3 rounded-full border border-[#2A2A2A] text-[#F5F5F5] hover:border-[var(--brand-accent)] transition-colors"
+              className="font-sans font-semibold text-base px-8 py-3 rounded-full border border-border text-text hover:border-[var(--brand-accent)] transition-colors"
             >
               {home.platillos_estrella.ver_menu_texto} →
             </Link>
@@ -159,7 +159,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-[#0A0A0A]">
+      <section className="py-20 lg:py-28 bg-bg">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
@@ -170,13 +170,13 @@ export default function Home() {
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-black/30" />
+              <div className="absolute inset-0 bg-black/15" />
             </div>
             <div>
-              <h2 className="font-sans font-bold text-3xl lg:text-4xl text-[#F5F5F5] mb-6 leading-tight">
+              <h2 className="font-sans font-bold text-3xl lg:text-4xl text-text mb-6 leading-tight">
                 {home.nosotros_preview.titulo}
               </h2>
-              <p className="font-body text-lg text-[#9A9A9A] leading-relaxed mb-8">
+              <p className="font-body text-lg text-muted leading-relaxed mb-8">
                 {home.nosotros_preview.texto}
               </p>
               <Link
